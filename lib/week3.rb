@@ -27,4 +27,13 @@ class Week3
       {:path => './', :version => '0.1.0', :mode => 'production'}.merge(input)
     end 
 
+    def run_me
+      "Hello " + yield
+    end
+
+    def each_odd
+      [1, 2, 3, 4].map do |x| 
+        (x % 2 != 0) ? yield : 'Even'
+      end
+    end  
 end
