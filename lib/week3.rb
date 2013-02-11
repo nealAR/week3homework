@@ -31,7 +31,7 @@ class Week3
       "Hello " + yield
     end
 
-    def each_odd
+    def each_odd(input)
       [1, 2, 3, 4].map do |x| 
         (x % 2 != 0) ? yield : 'Even'
       end
