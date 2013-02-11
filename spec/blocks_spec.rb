@@ -19,7 +19,8 @@ describe 'Week3 block method' do
   #   in the array passed in.
   # block can be the second parameter, or implicit.
   it '#each_odd iterates an array and yields the odd values to the block' do 
-    (subject.each_odd{"Odd"}).should eq ["Odd", "Even", "Odd", "Even"]
+    input = [1, 2, 3, 4]
+    (subject.each_odd(input){"Odd"}).should eq ["Odd", "Even", "Odd", "Even"]
   end  
 
 end
