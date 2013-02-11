@@ -32,7 +32,7 @@ class Week3
     end
 
     def each_odd(input)
-      [1, 2, 3, 4].map do |x| 
+      input.map do |x| 
         (x % 2 != 0) ? yield : 'Even'
       end
     end  
